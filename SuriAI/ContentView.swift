@@ -22,6 +22,7 @@ struct ContentView: View {
     @State var loading: Bool = false
     @State private var text: String = ""
     @State private var isStreaming: Bool = false
+    @StateObject private var appState = AppState()
 
 
 
@@ -51,10 +52,9 @@ struct ContentView: View {
             .padding(.horizontal, 10)
            
     
-     
                
                 
-            TextField("Ask Query", text: $userInput)
+            TextField(appState.modelReady ? "Ask Query" : "loading model..." , text: $userInput)
                 .focused($isTextFieldFocused)
                 .onChange(of: focusModel.focusTextField) { newValue, _ in
                     
@@ -68,8 +68,9 @@ struct ContentView: View {
                 .padding(.vertical, 12)
                 .padding(.horizontal, 20)
                 .onSubmit {
-                    if !isStreaming{
-                        submitAction()
+                    if !isStreaming && appState.modelReady{
+                            submitAction()
+                        
                     }
                 }
                 .overlay{
@@ -81,7 +82,9 @@ struct ContentView: View {
                                 streamingTask?.cancel()
                                 isStreaming = false
                             }else{
-                                submitAction()
+                                if appState.modelReady{
+                                    submitAction()
+                                }
                             }
                             
                             
@@ -106,9 +109,17 @@ struct ContentView: View {
                                     .padding(.trailing,20)
                             }
                             else{
-                                Image(systemName: "paperplane.fill")
-                                    .font(.system(size: 20))
-                                    .padding(.trailing,20)
+                                if appState.modelReady{
+                                    Image(systemName: "paperplane.fill")
+                                        .font(.system(size: 20))
+                                        .padding(.trailing,20)
+                                }
+                                else {
+                                    Image(systemName: "paperplane.fill")
+                                        .foregroundStyle(.gray)
+                                        .font(.system(size: 20))
+                                        .padding(.trailing,20)
+                                }
                                 
                             }
                         }
@@ -116,11 +127,19 @@ struct ContentView: View {
                     }
                 }
            
-            
+//            if !appState.modelReady{
+//                HStack{
+//                    Text("Loading Model ")
+//                        .fontWeight(.medium)
+//                    DotLoader()
+//                }
+//            }
             
             if loading {
                 DotLoader()
             }
+            
+     
             
             
             
@@ -214,6 +233,16 @@ struct ContentView: View {
 //            .frame(width: 500, alignment: .top)
 //            .frame(height: showResult ? 500 : 70 , alignment: .top)
             .frame(maxHeight: .infinity, alignment: .top)
+            .onAppear{
+                Task{
+                    do {
+                        try await waitForModelReady()
+                        appState.modelReady = true
+                    } catch {
+                        print("❌ Model failed to load: \(error)")
+                    }
+                }
+            }
 
 
             
@@ -307,6 +336,16 @@ struct DotLoader: View {
         }
         .onAppear { isAnimating = true }
 
+    }
+}
+
+struct LoadingModel: View {
+    var body: some View {
+        HStack{
+            Text("Loading Model ")
+                .fontWeight(.medium)
+            DotLoader()
+        }
     }
 }
 

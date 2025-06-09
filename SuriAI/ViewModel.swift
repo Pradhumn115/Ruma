@@ -91,3 +91,30 @@ func streamChatResponse(userInput: String) async throws -> AsyncThrowingStream<S
     }
 }
 
+func waitForModelReady(retryInterval: TimeInterval = 1.0) async throws {
+    let url = URL(string: "http://127.0.0.1:8000/status")!
+
+    while true {
+        var request = URLRequest(url: url)
+        request.httpMethod = "GET"
+
+        do {
+            let (data, _) = try await URLSession.shared.data(for: request)
+            if let status = try? JSONDecoder().decode([String: Bool].self, from: data),
+               status["ready"] == true {
+                print("✅ Model is ready.")
+                return
+            }
+            print("⏳ Model not ready, retrying...")
+
+        } catch {
+            print("❌ Server not reachable, retrying in \(retryInterval)s...")
+        }
+        
+        try await Task.sleep(nanoseconds: UInt64(retryInterval * 1_000_000_000))
+    }
+}
+
+class AppState: ObservableObject {
+    @Published var modelReady = false
+}
