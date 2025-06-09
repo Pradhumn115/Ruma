@@ -77,9 +77,9 @@ We take ethical use of AI seriously. Any future contributions, forks, or integra
 
 - 🎙️ Voice input and response system
 - 🧠 Hyper-personalized memory
-- 🧩 Drag-and-drop Workflow Blocks
-- 🛠️ Settings UI + Model selector
-- 🧪 Offline developer tools for adding skills
+- 🧩 Personalization Engine
+- 🛠️ UI Improvements
+- 🧪 More Local Models
 
 ---
 
