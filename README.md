@@ -1,6 +1,6 @@
 ![Your Project Logo](https://www.suriai.app/social-preview.png)
 
-# 🧠 SuriAI – Your Personal AI Assistant for macOS
+# 🧠 Suri – Your Personal AI Assistant for macOS
 
 SuriAI is a blazing-fast, privacy-first AI assistant designed to run **locally on your Mac** with zero cloud dependency. It lives in your menu bar and is summoned with a simple hotkey — ready to assist you anytime with personalized, offline AI workflows.
 
@@ -56,7 +56,7 @@ Download the latest `.app` file from:
 
 ## 🔐 Privacy & Security
 
-While **SuriAI is now open source**, certain components — especially those involving:
+While **Suri is now open source**, certain components — especially those involving:
 
 - Sensitive AI models
 - Internal logic tied to personal data processing
