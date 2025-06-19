@@ -35,7 +35,7 @@ Built with **MLX**, **LangChain**, and **FastAPI**, SuriAI empowers users with A
 
 Download the latest `.app` file from:
 
-- [🌐 Website](www.suriai.app)
+- [🌐 Website](https://suriai.app)
 - [📁 GitHub Releases](https://github.com/Pradhumn115/SuriAI/releases)
 
 ---
@@ -77,9 +77,9 @@ We take ethical use of AI seriously. Any future contributions, forks, or integra
 
 - 🎙️ Voice input and response system
 - 🧠 Hyper-personalized memory
-- 🧩 Drag-and-drop Workflow Blocks
-- 🛠️ Settings UI + Model selector
-- 🧪 Offline developer tools for adding skills
+- 🧩 Personalization Engine
+- 🛠️ UI Improvements
+- 🧪 More Local Models
 
 ---
 

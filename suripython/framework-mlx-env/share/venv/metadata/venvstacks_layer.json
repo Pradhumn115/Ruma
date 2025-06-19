@@ -1,0 +1,12 @@
+{
+  "base_python": "../cpython@3.11/bin/python",
+  "dynlib_dirs": [
+    "../cpython@3.11/share/venv/dynlib"
+  ],
+  "py_version": "3.11.13",
+  "pylib_dirs": [
+    "../cpython@3.11/lib/python3.11/site-packages"
+  ],
+  "python": "bin/python",
+  "site_dir": "lib/python3.11/site-packages"
+}

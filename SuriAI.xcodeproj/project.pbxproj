@@ -7,7 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE2CBD652E01B6C300468343 /* suripython in Resources */ = {isa = PBXBuildFile; fileRef = AE2CBD642E01B6C300468343 /* suripython */; };
+		AE2CBD6B2E01D17900468343 /* mlx_wrapper.py in Resources */ = {isa = PBXBuildFile; fileRef = AE2CBD682E01D17900468343 /* mlx_wrapper.py */; };
+		AE2CBD6C2E01D17900468343 /* MLXEngine.py in Resources */ = {isa = PBXBuildFile; fileRef = AE2CBD692E01D17900468343 /* MLXEngine.py */; };
+		AE2CBD6F2E01D1B600468343 /* mlx_app.py in Resources */ = {isa = PBXBuildFile; fileRef = AE2CBD6E2E01D1B600468343 /* mlx_app.py */; };
+		AE2CBD712E01D32000468343 /* .env in Resources */ = {isa = PBXBuildFile; fileRef = AE2CBD702E01D32000468343 /* .env */; };
+		AE2CBD732E01D38300468343 /* Models in Resources */ = {isa = PBXBuildFile; fileRef = AE2CBD722E01D38300468343 /* Models */; };
+		AE2CBDB72E033A6300468343 /* MarkdownUI in Frameworks */ = {isa = PBXBuildFile; productRef = AE2CBDB62E033A6300468343 /* MarkdownUI */; };
 		AE5A8E562DED765C00FB98F4 /* HotKey in Frameworks */ = {isa = PBXBuildFile; productRef = AE5A8E552DED765C00FB98F4 /* HotKey */; };
+		AEB2AFA32DFF5541001522C1 /* SplitView in Frameworks */ = {isa = PBXBuildFile; productRef = AEB2AFA22DFF5541001522C1 /* SplitView */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +36,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AE2CBD642E01B6C300468343 /* suripython */ = {isa = PBXFileReference; lastKnownFileType = folder; name = suripython; path = ../PythonFiles1/suripython; sourceTree = "<group>"; };
+		AE2CBD682E01D17900468343 /* mlx_wrapper.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; name = mlx_wrapper.py; path = ../PythonFiles1/mlx_wrapper.py; sourceTree = "<group>"; };
+		AE2CBD692E01D17900468343 /* MLXEngine.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; name = MLXEngine.py; path = ../PythonFiles1/MLXEngine.py; sourceTree = "<group>"; };
+		AE2CBD6E2E01D1B600468343 /* mlx_app.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; name = mlx_app.py; path = ../PythonFiles1/mlx_app.py; sourceTree = "<group>"; };
+		AE2CBD702E01D32000468343 /* .env */ = {isa = PBXFileReference; lastKnownFileType = text; name = .env; path = ../PythonFiles1/.env; sourceTree = "<group>"; };
+		AE2CBD722E01D38300468343 /* Models */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Models; path = ../Models; sourceTree = "<group>"; };
 		AE5A8E142DED760B00FB98F4 /* SuriAI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuriAI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE5A8E222DED760D00FB98F4 /* SuriAITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SuriAITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE5A8E2C2DED760D00FB98F4 /* SuriAIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SuriAIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -56,7 +70,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE2CBDB72E033A6300468343 /* MarkdownUI in Frameworks */,
 				AE5A8E562DED765C00FB98F4 /* HotKey in Frameworks */,
+				AEB2AFA32DFF5541001522C1 /* SplitView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +96,12 @@
 		AE5A8E0B2DED760B00FB98F4 = {
 			isa = PBXGroup;
 			children = (
+				AE2CBD722E01D38300468343 /* Models */,
+				AE2CBD702E01D32000468343 /* .env */,
+				AE2CBD6E2E01D1B600468343 /* mlx_app.py */,
+				AE2CBD682E01D17900468343 /* mlx_wrapper.py */,
+				AE2CBD692E01D17900468343 /* MLXEngine.py */,
+				AE2CBD642E01B6C300468343 /* suripython */,
 				AE5A8E162DED760B00FB98F4 /* SuriAI */,
 				AE5A8E252DED760D00FB98F4 /* SuriAITests */,
 				AE5A8E2F2DED760D00FB98F4 /* SuriAIUITests */,
@@ -118,6 +140,8 @@
 			name = SuriAI;
 			packageProductDependencies = (
 				AE5A8E552DED765C00FB98F4 /* HotKey */,
+				AEB2AFA22DFF5541001522C1 /* SplitView */,
+				AE2CBDB62E033A6300468343 /* MarkdownUI */,
 			);
 			productName = SuriAI;
 			productReference = AE5A8E142DED760B00FB98F4 /* SuriAI.app */;
@@ -177,7 +201,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1630;
-				LastUpgradeCheck = 1630;
+				LastUpgradeCheck = 1640;
 				TargetAttributes = {
 					AE5A8E132DED760B00FB98F4 = {
 						CreatedOnToolsVersion = 16.3;
@@ -203,6 +227,8 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				AE5A8E542DED765C00FB98F4 /* XCRemoteSwiftPackageReference "HotKey" */,
+				AEB2AFA12DFF5541001522C1 /* XCRemoteSwiftPackageReference "SplitView" */,
+				AE2CBDB52E033A6300468343 /* XCRemoteSwiftPackageReference "swift-markdown-ui" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = AE5A8E152DED760B00FB98F4 /* Products */;
@@ -221,6 +247,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE2CBD732E01D38300468343 /* Models in Resources */,
+				AE2CBD712E01D32000468343 /* .env in Resources */,
+				AE2CBD6F2E01D1B600468343 /* mlx_app.py in Resources */,
+				AE2CBD6B2E01D17900468343 /* mlx_wrapper.py in Resources */,
+				AE2CBD6C2E01D17900468343 /* MLXEngine.py in Resources */,
+				AE2CBD652E01B6C300468343 /* suripython in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,6 +344,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -375,6 +408,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -402,13 +436,18 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = SuriAI/SuriAI.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = KS252J4F4N;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SuriAI/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = SuriAI;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -439,7 +478,7 @@
 					"$(PROJECT_DIR)/surivenv/lib/python3.11/site-packages/watchfiles",
 					"$(PROJECT_DIR)/surivenv/lib/python3.11/site-packages/numpy/_core/lib",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 0.01;
 				PRODUCT_BUNDLE_IDENTIFIER = name.pradhumn.SuriAI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -455,13 +494,18 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = SuriAI/SuriAI.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = KS252J4F4N;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SuriAI/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = SuriAI;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -492,7 +536,7 @@
 					"$(PROJECT_DIR)/surivenv/lib/python3.11/site-packages/watchfiles",
 					"$(PROJECT_DIR)/surivenv/lib/python3.11/site-packages/numpy/_core/lib",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 0.01;
 				PRODUCT_BUNDLE_IDENTIFIER = name.pradhumn.SuriAI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -508,6 +552,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 15.4;
 				MARKETING_VERSION = 1.0;
@@ -525,6 +570,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 15.4;
 				MARKETING_VERSION = 1.0;
@@ -541,6 +587,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = name.pradhumn.SuriAIUITests;
@@ -556,6 +603,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = name.pradhumn.SuriAIUITests;
@@ -608,6 +656,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		AE2CBDB52E033A6300468343 /* XCRemoteSwiftPackageReference "swift-markdown-ui" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/gonzalezreal/swift-markdown-ui";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.4.1;
+			};
+		};
 		AE5A8E542DED765C00FB98F4 /* XCRemoteSwiftPackageReference "HotKey" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/soffes/HotKey";
@@ -616,13 +672,31 @@
 				kind = branch;
 			};
 		};
+		AEB2AFA12DFF5541001522C1 /* XCRemoteSwiftPackageReference "SplitView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/stevengharris/SplitView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.5.3;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		AE2CBDB62E033A6300468343 /* MarkdownUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AE2CBDB52E033A6300468343 /* XCRemoteSwiftPackageReference "swift-markdown-ui" */;
+			productName = MarkdownUI;
+		};
 		AE5A8E552DED765C00FB98F4 /* HotKey */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = AE5A8E542DED765C00FB98F4 /* XCRemoteSwiftPackageReference "HotKey" */;
 			productName = HotKey;
+		};
+		AEB2AFA22DFF5541001522C1 /* SplitView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AEB2AFA12DFF5541001522C1 /* XCRemoteSwiftPackageReference "SplitView" */;
+			productName = SplitView;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

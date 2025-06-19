@@ -5,73 +5,78 @@ from MLXEngine import MLXLLM
 import json
 import asyncio
 import uvicorn
+from contextlib import asynccontextmanager
 
-current_streaming_task: asyncio.Task | None = None
+# Shared state
+model_ready = False
+llm = None
 
-app = FastAPI()
+# Global stop signal
+stop_stream = False
 
-# Load the MLX model
-mlx_engine = MLXLLM()
-llm = mlx_engine.load_model()  # Load the model
+
+
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    global llm, model_ready
+    print("🔄 Loading MLX model...")
+    mlx_engine = MLXLLM()
+    llm = await mlx_engine.load_model()
+    model_ready = True
+    print("✅ Model loaded and ready.")
+    yield
+    
+    
+
+app = FastAPI(lifespan=lifespan)
 
 
 
 # Data model for the /chat endpoint
 class ChatRequest(BaseModel):
     input: str
-
+    
+@app.get("/status")
+def status():
+    return {"ready": model_ready}
 
 @app.get("/")
 def read_root():
     return {"message": "Welcome To Suri Ai, Experience the Power of Offline Personal Assistant"}
 
 
+
 @app.post("/chat")
 async def chat_endpoint(request: ChatRequest):
-    global current_streaming_task
+    global stop_stream
+
     user_message = request.input
-    print(user_message)
-    
-    if current_streaming_task and not current_streaming_task.done():
-        current_streaming_task.cancel()
-        try:
-            await current_streaming_task
-        except asyncio.CancelledError:
-            print("Previous streaming task cancelled")
-    # llm_response = ""
-    # for chunk in llm.stream(user_message):
-    #     print(chunk.content, end="", flush=True)
-    #     llm_response += chunk.content
-    #     llm_response = llm_response.removeprefix("<|eot_id|>").removesuffix("<|eot_id|>")
-    
-    # async def generate():
-    #     for chunk in llm.stream(user_message):
-    #         print(chunk.content, end="", flush=True)
-    #         json_chunk = json.dumps({"content": chunk.content})
-    #         yield f"data: {json_chunk}\n\n"
-    
-    # Create a new streaming task
-    
+    stop_stream = False  # Reset stop before new chat
+
     async def generate_sse():
+        global stop_stream
         try:
-            for chunk in llm.stream(user_message):  # blocking generator
+            for chunk in llm.stream(user_message):
+                if stop_stream:
+                    print("🛑 Stream manually stopped")
+                    break
                 json_chunk = json.dumps({"content": chunk.content})
                 yield f"data: {json_chunk}\n\n"
                 await asyncio.sleep(0)  # allow cancellation
         except asyncio.CancelledError:
-            print("Streaming cancelled")
+            print("⚠️ Streaming cancelled")
             raise
 
-    # Assign the generator directly, no create_task
-    current_streaming_task = asyncio.create_task(asyncio.sleep(0))  # dummy task to hold state
-     
-            
-
-    
-    # Simulated response logic
-    # response_message = f"You said: {user_message}"
-
     return StreamingResponse(generate_sse(), media_type="text/event-stream")
+
+
+@app.post("/stop")
+async def stop_generation():
+    global stop_stream
+    stop_stream = True
+    return {"status": "stopping"}
+
+
 
 
 if __name__ == "__main__":

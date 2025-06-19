@@ -15,8 +15,8 @@ model_directory = os.getenv("HF_HOME")
 
 base_dir = os.path.dirname(os.path.abspath(__file__))
 
-model_id = f"{model_directory}/Llama-3.2-3B-Instruct-4bit"
-# model_id = os.path.join(base_dir, model_directory, "Llama-3.2-3B-Instruct-4bit")
+# model_id = f"{model_directory}/Llama-3.2-3B-Instruct-4bit"
+model_id = os.path.join(base_dir, model_directory, "Llama-3.2-3B-Instruct-4bit")
 
 
 
@@ -38,7 +38,7 @@ class MLXLLM:
         print(self.kwargs)
         # self.load_model()
 
-    def load_model(self):
+    async def load_model(self):
         """Load the MLX model from the specified model ID."""
         
         # model = MLXPipeline.from_model_id(model_id=self.model_id,pipeline_kwargs=self.kwargs)

@@ -88,6 +88,7 @@ class ContentPanel: NSPanel {
             .environmentObject(focusModel)
 //        let contentView = ContentView()
 //            .environmentObject(updater) // inject into SwiftUI
+//            .environmentObject(focusModel)
             
         
         

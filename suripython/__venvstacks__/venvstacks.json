@@ -1,0 +1,46 @@
+{
+  "layers": {
+    "applications": [
+      {
+        "app_launch_module": "mlx_app",
+        "app_launch_module_hash": "sha256:d485d5c15eb3372ca08ab134da49e0bbc0e9b92bae58a344def714d79c253ed2",
+        "bound_to_implementation": false,
+        "install_target": "app-suriai-app",
+        "layer_name": "app-suriai-app",
+        "lock_version": 1,
+        "locked_at": "2025-06-17T10:16:19.903918+00:00",
+        "python_implementation": "cpython@3.11.13",
+        "required_layers": [
+          "framework-mlx-env"
+        ],
+        "requirements_hash": "sha256:5df6c49f8e51ff85f5a3c610aed35a493964cef62cafcb45a937e7da846f367d",
+        "runtime_layer": "cpython@3.11"
+      }
+    ],
+    "frameworks": [
+      {
+        "bound_to_implementation": false,
+        "install_target": "framework-mlx-env",
+        "layer_name": "framework-mlx-env",
+        "lock_version": 1,
+        "locked_at": "2025-06-17T10:16:19.875191+00:00",
+        "python_implementation": "cpython@3.11.13",
+        "required_layers": [],
+        "requirements_hash": "sha256:f5e316215b607d96b4302eeeb5337f0a33579fbea819e134d3af302ee45660cc",
+        "runtime_layer": "cpython@3.11"
+      }
+    ],
+    "runtimes": [
+      {
+        "bound_to_implementation": true,
+        "install_target": "cpython@3.11",
+        "layer_name": "cpython@3.11",
+        "lock_version": 1,
+        "locked_at": "2025-06-17T10:16:19.833655+00:00",
+        "python_implementation": "cpython@3.11.13",
+        "requirements_hash": "sha256:fea4d947a3c59a2db0cecd29f103399258063ac85dccb88ae096a888b41999c1",
+        "runtime_layer": "cpython@3.11"
+      }
+    ]
+  }
+}

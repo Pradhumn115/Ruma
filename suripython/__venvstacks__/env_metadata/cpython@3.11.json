@@ -1,0 +1,10 @@
+{
+  "bound_to_implementation": true,
+  "install_target": "cpython@3.11",
+  "layer_name": "cpython@3.11",
+  "lock_version": 1,
+  "locked_at": "2025-06-17T10:16:19.833655+00:00",
+  "python_implementation": "cpython@3.11.13",
+  "requirements_hash": "sha256:fea4d947a3c59a2db0cecd29f103399258063ac85dccb88ae096a888b41999c1",
+  "runtime_layer": "cpython@3.11"
+}

@@ -18,6 +18,14 @@ struct SuriAIApp: App {
         }label: {
             Label("Suri AI", image: "menuBarLogo") // Custom image
         }
+        
+        // Define the second window here
+        WindowGroup("Model Hub", id: "ModelHubWindow") {
+            ModelHubView()
+                .containerBackground(.clear, for: .window)
+        }
+        
+//        .windowResizability(.contentSize)
     }
 }
 

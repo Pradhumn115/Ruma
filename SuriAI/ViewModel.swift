@@ -115,6 +115,21 @@ func waitForModelReady(retryInterval: TimeInterval = 1.0) async throws {
     }
 }
 
+func stopGeneration() async {
+    guard let url = URL(string: "http://127.0.0.1:8000/stop") else { return }
+    
+    var request = URLRequest(url: url)
+    request.httpMethod = "POST"
+    
+    do {
+        let (_, _) = try await URLSession.shared.data(for: request)
+        print("🛑 Stop signal sent to backend.")
+    } catch {
+        print("❌ Failed to send stop signal: \(error)")
+    }
+}
+
+
 class AppState: ObservableObject {
     @Published var modelReady = false
 }

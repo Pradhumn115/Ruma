@@ -20,7 +20,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         NSApp.setActivationPolicy(.accessory)
         
         setupHotkey()
-        
+
+        PythonScriptRunner.shared.runPostInstallScripts()
         PythonScriptRunner.shared.runPythonScript()
         
     }
@@ -75,7 +76,7 @@ class PythonScriptRunner {
     
     func runPythonScript() {
         
-        let pythonPath = Bundle.main.resourcePath! + "/surivenv/bin/python3"
+        let pythonPath = Bundle.main.resourcePath! + "/suripython/app-suriai-app/bin/python3"
         let scriptPath = Bundle.main.resourcePath! + "/mlx_app.py"
 
         let task = Process()
@@ -111,5 +112,48 @@ class PythonScriptRunner {
             print("No running task to terminate.")
         }
     }
+    
+
+    func runPostInstallScripts(){
+        
+        let resourcePath = Bundle.main.resourcePath
+        
+        print("Resource Path: \(resourcePath!)")
+        
+        
+        let allArgs: [String] = [
+            
+            resourcePath! + "/suripython/app-suriai-app/postinstall.py",
+            resourcePath! + "/suripython/framework-mlx-env/postinstall.py",
+            resourcePath! + "/suripython/cpython@3.11/postinstall.py"
+                            
+        ]
+        for arg in allArgs{
+            
+            let task = Process()
+            let pipe = Pipe()
+            
+            task.standardOutput = pipe
+            task.standardError = pipe
+            
+            task.arguments = [arg]
+            
+            task.launchPath = resourcePath! + "/suripython/cpython@3.11/bin/python3"
+            task.standardInput = nil
+            task.launch()
+            
+            let data = pipe.fileHandleForReading.readDataToEndOfFile()
+            
+            let output = String(data: data, encoding: .utf8) ?? "No output"
+            print(output,"Done Execution")
+            
+        }
+       
+        
+    }
+
+
+
+
     
 }
