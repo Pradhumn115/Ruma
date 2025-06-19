@@ -1,3 +1,5 @@
+![Your Project Logo](docs/banner.png)
+
 # 🧠 SuriAI – Your Personal AI Assistant for macOS
 
 SuriAI is a blazing-fast, privacy-first AI assistant designed to run **locally on your Mac** with zero cloud dependency. It lives in your menu bar and is summoned with a simple hotkey — ready to assist you anytime with personalized, offline AI workflows.
