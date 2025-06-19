@@ -1,4 +1,4 @@
-![Your Project Logo](docs/banner.png)
+![Your Project Logo](https://www.suriai.app/social-preview.png)
 
 # 🧠 SuriAI – Your Personal AI Assistant for macOS
 
