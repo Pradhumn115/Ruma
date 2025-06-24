@@ -1,7 +1,8 @@
 ![Your Project Logo](https://www.rumaai.app/social-preview.png)
 
-# Suri Name has been Changed to Ruma
+# Suri Name has been Changed to -> Ruma
 
+--------
 
 # 🧠 Ruma – Your Personal AI Assistant for macOS
 
