@@ -1,5 +1,8 @@
 ![Your Project Logo](https://www.rumaai.app/social-preview.png)
 
+# Suri Name has been Changed to Ruma
+
+
 # 🧠 Ruma – Your Personal AI Assistant for macOS
 
 Ruma is a blazing-fast, privacy-first AI assistant designed to run **locally on your Mac** with zero cloud dependency. It lives in your menu bar and is summoned with a simple hotkey — ready to assist you anytime with personalized, offline AI workflows.
