@@ -116,3 +116,20 @@ See [`LICENSE`](./LICENSE) for details.
 Ruma is intended for personal productivity and ethical use only.  
 Any attempts to repurpose this project for surveillance, exploitation, or any illegal activities are strictly condemned.
 
+## ™️ Trademark Notice
+
+
+Ruma™ is a trademark of Pradhumn Gupta.
+Use of the name Ruma or any confusingly similar variations for similar AI assistants, software products, or services is strictly prohibited without prior written permission.
+
+This includes, but is not limited to:
+
+Naming of competing applications
+Marketing materials
+Forks or rebrands of this project
+Use in commercial or open-source software
+We are in the process of trademark registration. Legal action may be pursued against unauthorized usage to protect the integrity of the brand and the trust of its users.
+
+If you’re interested in building with or contributing to Ruma, please reach out through the official channels.
+
+
