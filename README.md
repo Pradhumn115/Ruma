@@ -22,6 +22,7 @@ Built with **MLX**, **LangChain**, and **FastAPI**, Ruma empowers users with AI 
 - 🧠 **Memory Management** – Retains short-term and long-term context
 - 🖥️ **Screen Reasoning** – Understands on-screen content for smart actions
 - 🎛️ **UI Improvements** – Polished macOS interface and menu bar access
+- 🎛️ **Custom Hotkey Support** – Set your preferred shortcut to summon Ruma
 
 ---
 
