@@ -1,12 +1,8 @@
 ![Your Project Logo](https://www.rumaai.app/social-preview.png)
 
-# Suri Name has been Changed to -> Ruma
-
---------
-
 # 🧠 Ruma – Your Personal AI Assistant for macOS
 
-Ruma is a blazing-fast, privacy-first AI assistant designed to run **locally on your Mac** with zero cloud dependency. It lives in your menu bar and is summoned with a simple hotkey — ready to assist you anytime with personalized, offline AI workflows.
+**Ruma** is a blazing-fast, privacy-first AI assistant designed to run **locally on your Mac** with **zero cloud dependency**. It lives in your menu bar and is summoned with a simple hotkey — ready to assist anytime with personalized, offline AI workflows.
 
 Built with **MLX**, **LangChain**, and **FastAPI**, Ruma empowers users with AI that respects autonomy, performance, and data sovereignty.
 
@@ -16,10 +12,15 @@ Built with **MLX**, **LangChain**, and **FastAPI**, Ruma empowers users with AI 
 
 - ⚡ **Fast & Local** – Optimized for Apple Silicon with MLX-powered inference
 - 🧠 **Conversational AI** – Interact via natural language like a personal assistant
+- 🔒 **Private by Design** – 100% local processing. No cloud dependency.
+- 📶 **Offline-Capable** – Works without an internet connection
 - 🧩 **Modular & Extensible** – Add new capabilities via Python-based blocks
-- 🔒 **Private by Design** – No cloud. All processing is 100% local.
-- 📶 **Offline-Capable** – Works without internet access
-- 🧠 **Menu Bar Access** – Lightweight footprint with a persistent macOS icon
+- 🧠 **Multimodal Support** – Image, text, and vision-based tasks with API key integration
+- 🪪 **Personalization Engine** – Learns your habits and context over time
+- 🧠 **Memory Management** – Retains short-term and long-term context
+- 🖥️ **Screen Reasoning** – Understands on-screen content for smart actions
+- 🎛️ **UI Improvements** – Polished macOS interface and menu bar access
+- 🎛️ **Custom Hotkey Support** – Set your preferred shortcut to summon Ruma
 
 ---
 
@@ -30,7 +31,8 @@ Built with **MLX**, **LangChain**, and **FastAPI**, Ruma empowers users with AI 
 3. Interact via natural language — ask, command, automate
 4. Use the menu bar 🧠 icon to:
    - Toggle visibility
-   - Open settings (coming soon)
+   - Open Model Hub
+   - Open Memory Management
    - Quit Ruma completely
 
 💡 *Use the menu bar icon to stop Ruma from running in the background.*
@@ -53,56 +55,71 @@ Download the latest `.app` file from:
 
 ---
 
-## Community
-- [Discord](https://discord.gg/rNXYjmWU)
-
----
-
 ## 🔐 Privacy & Security
 
 While **Ruma is now open source**, certain components — especially those involving:
 
 - Sensitive AI models
-- Internal logic tied to personal data processing
-- Safeguards against misuse
-- Voice/facial recognition modules (future)
+- Personal data logic
+- Misuse prevention safeguards
+- Voice and facial recognition modules (future)
 
 will remain **private or closed-source**.
 
-This is a deliberate choice to:
+This ensures:
 
-- **Protect user privacy**
-- **Prevent potential abuse or illegal applications**
-- **Maintain trust in AI-driven personal assistants**
+- 🛡️ **User privacy**
+- ⚖️ **Responsible AI development**
+- 🔐 **Protection from abuse**
 
-We take ethical use of AI seriously. Any future contributions, forks, or integrations **must** comply with our commitment to safety and responsible development.
-
----
-
-## ✨ Roadmap / Coming Soon
-
-- 🎙️ Voice input and response system
-- 🧠 Hyper-personalized memory
-- 🧩 Personalization Engine
-- 🛠️ UI Improvements
-- 🧪 More Local Models
+All forks, contributions, and integrations **must follow our ethics and privacy-first philosophy**.
 
 ---
 
-## 🧪 Contributing
+## 🗺️ Roadmap
 
-We welcome ideas, issue reports, and external contributions! However, for sensitive modules, **access will be limited** to maintain user safety.
+### ✅ Now Available
 
-> Please open an issue to discuss potential contributions before submitting a pull request.
+- 🧠 Multimodal support (vision/text with API keys)
+- 🧩 Personalization engine
+- 🧠 Memory management (short- and long-term)
+- 🖥️ Screen reasoning
+- 🎛️ UI & performance improvements
+
+### 🧪 Coming Soon
+- 🌍 **Advanced web search**
+- 📄 **Deep document analysis & research workflows**
+- 🧠 **Explicit large data training & fine-tuning tools**
+- 🧱 **More local models with CoreML & Ollama support**
+- 📦 **Automatic model & block updates**
+- 🎙️ **Voice input** (coming soon)
+
+---
+
+## 🤝 Contributing
+
+We welcome:
+- 💡 Ideas
+- 🐛 Bug reports
+- 🛠️ External contributions
+
+> Note: Some sensitive or safety-critical modules will remain restricted.  
+> Please open an issue to discuss contributions before submitting a PR.
+
+---
+
+## 🌐 Community
+
+- [💬 Discord](https://discord.gg/rNXYjmWU)
 
 ---
 
 ## 👤 About
 
-Created by **Pradhumn Gupta** to enhance daily productivity with local, secure AI.
+Created by **Pradhumn Gupta** to empower productivity with local, secure AI.
 
-- 🌐 [Twitter / X](https://x.com/Pradhumn115)
-- 💼 [LinkedIn](https://www.linkedin.com/in/pradhumn-gupta-8b52891bb/)
+- [X / Twitter](https://x.com/Pradhumn115)  
+- [LinkedIn](https://www.linkedin.com/in/pradhumn-gupta-8b52891bb/)
 
 ---
 
@@ -111,29 +128,26 @@ Created by **Pradhumn Gupta** to enhance daily productivity with local, secure A
 This project is licensed under the **MIT License**.  
 See [`LICENSE`](./LICENSE) for details.
 
-> Note: Some internal tools and models remain proprietary or restricted to prevent misuse.
+> Some proprietary tools and models may be restricted to prevent misuse.
 
 ---
 
 ## ⚠️ Disclaimer
 
-Ruma is intended for personal productivity and ethical use only.  
-Any attempts to repurpose this project for surveillance, exploitation, or any illegal activities are strictly condemned.
+**Ruma is intended for personal productivity and ethical use only.**  
+Any attempts to repurpose Ruma for surveillance, exploitation, or unlawful activity are strictly condemned.
+
+---
 
 ## ™️ Trademark Notice
 
+**Ruma™** is a trademark of Pradhumn Gupta.
 
-Ruma™ is a trademark of Pradhumn Gupta.
-Use of the name Ruma or any confusingly similar variations for similar AI assistants, software products, or services is strictly prohibited without prior written permission.
+Use of the name **Ruma** or any similar variation for competing software, forks, or commercial offerings is **strictly prohibited without prior written permission**.
 
-This includes, but is not limited to:
+Trademark protection helps preserve:
+- Brand integrity
+- User trust
+- Responsible development standards
 
-Naming of competing applications
-Marketing materials
-Forks or rebrands of this project
-Use in commercial or open-source software
-We are in the process of trademark registration. Legal action may be pursued against unauthorized usage to protect the integrity of the brand and the trust of its users.
-
-If you’re interested in building with or contributing to Ruma, please reach out through the official channels.
-
-
+If you're interested in partnering or building with Ruma, please reach out via official channels.
