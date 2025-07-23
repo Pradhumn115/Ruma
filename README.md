@@ -1,8 +1,14 @@
-# 🧠 SuriAI – Your Personal AI Assistant for macOS
+![Your Project Logo](https://www.rumaai.app/social-preview.png)
 
-SuriAI is a blazing-fast, privacy-first AI assistant designed to run **locally on your Mac** with zero cloud dependency. It lives in your menu bar and is summoned with a simple hotkey — ready to assist you anytime with personalized, offline AI workflows.
+# Suri Name has been Changed to -> Ruma
 
-Built with **MLX**, **LangChain**, and **FastAPI**, SuriAI empowers users with AI that respects autonomy, performance, and data sovereignty.
+--------
+
+# 🧠 Ruma – Your Personal AI Assistant for macOS
+
+Ruma is a blazing-fast, privacy-first AI assistant designed to run **locally on your Mac** with zero cloud dependency. It lives in your menu bar and is summoned with a simple hotkey — ready to assist you anytime with personalized, offline AI workflows.
+
+Built with **MLX**, **LangChain**, and **FastAPI**, Ruma empowers users with AI that respects autonomy, performance, and data sovereignty.
 
 ---
 
@@ -20,14 +26,14 @@ Built with **MLX**, **LangChain**, and **FastAPI**, SuriAI empowers users with A
 ## 🎯 How to Use
 
 1. Install and launch the app
-2. Press `⌘ Command + ⇧ Shift + A` anywhere to activate SuriAI
+2. Press `⌘ Command + ⇧ Shift + A` anywhere to activate Ruma
 3. Interact via natural language — ask, command, automate
 4. Use the menu bar 🧠 icon to:
    - Toggle visibility
    - Open settings (coming soon)
-   - Quit SuriAI completely
+   - Quit Ruma completely
 
-💡 *Use the menu bar icon to stop SuriAI from running in the background.*
+💡 *Use the menu bar icon to stop Ruma from running in the background.*
 
 ---
 
@@ -35,8 +41,8 @@ Built with **MLX**, **LangChain**, and **FastAPI**, SuriAI empowers users with A
 
 Download the latest `.app` file from:
 
-- [🌐 Website](https://suriai.app)
-- [📁 GitHub Releases](https://github.com/Pradhumn115/SuriAI/releases)
+- [🌐 Website](https://rumaai.app)
+- [📁 GitHub Releases](https://github.com/Pradhumn115/Ruma/releases)
 
 ---
 
@@ -54,7 +60,7 @@ Download the latest `.app` file from:
 
 ## 🔐 Privacy & Security
 
-While **SuriAI is now open source**, certain components — especially those involving:
+While **Ruma is now open source**, certain components — especially those involving:
 
 - Sensitive AI models
 - Internal logic tied to personal data processing
@@ -111,6 +117,23 @@ See [`LICENSE`](./LICENSE) for details.
 
 ## ⚠️ Disclaimer
 
-SuriAI is intended for personal productivity and ethical use only.  
+Ruma is intended for personal productivity and ethical use only.  
 Any attempts to repurpose this project for surveillance, exploitation, or any illegal activities are strictly condemned.
+
+## ™️ Trademark Notice
+
+
+Ruma™ is a trademark of Pradhumn Gupta.
+Use of the name Ruma or any confusingly similar variations for similar AI assistants, software products, or services is strictly prohibited without prior written permission.
+
+This includes, but is not limited to:
+
+Naming of competing applications
+Marketing materials
+Forks or rebrands of this project
+Use in commercial or open-source software
+We are in the process of trademark registration. Legal action may be pursued against unauthorized usage to protect the integrity of the brand and the trust of its users.
+
+If you’re interested in building with or contributing to Ruma, please reach out through the official channels.
+
 

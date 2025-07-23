@@ -1,8 +1,0 @@
-{
-  "base_python": "bin/python",
-  "dynlib_dirs": [],
-  "py_version": "3.11.13",
-  "pylib_dirs": [],
-  "python": "bin/python",
-  "site_dir": "lib/python3.11/site-packages"
-}

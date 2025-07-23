@@ -7,15 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AE2CBD652E01B6C300468343 /* suripython in Resources */ = {isa = PBXBuildFile; fileRef = AE2CBD642E01B6C300468343 /* suripython */; };
-		AE2CBD6B2E01D17900468343 /* mlx_wrapper.py in Resources */ = {isa = PBXBuildFile; fileRef = AE2CBD682E01D17900468343 /* mlx_wrapper.py */; };
-		AE2CBD6C2E01D17900468343 /* MLXEngine.py in Resources */ = {isa = PBXBuildFile; fileRef = AE2CBD692E01D17900468343 /* MLXEngine.py */; };
-		AE2CBD6F2E01D1B600468343 /* mlx_app.py in Resources */ = {isa = PBXBuildFile; fileRef = AE2CBD6E2E01D1B600468343 /* mlx_app.py */; };
-		AE2CBD712E01D32000468343 /* .env in Resources */ = {isa = PBXBuildFile; fileRef = AE2CBD702E01D32000468343 /* .env */; };
-		AE2CBD732E01D38300468343 /* Models in Resources */ = {isa = PBXBuildFile; fileRef = AE2CBD722E01D38300468343 /* Models */; };
 		AE2CBDB72E033A6300468343 /* MarkdownUI in Frameworks */ = {isa = PBXBuildFile; productRef = AE2CBDB62E033A6300468343 /* MarkdownUI */; };
+		AE2CBE112E044D2F00468343 /* SwiftfulLoadingIndicators in Frameworks */ = {isa = PBXBuildFile; productRef = AE2CBE102E044D2F00468343 /* SwiftfulLoadingIndicators */; };
 		AE5A8E562DED765C00FB98F4 /* HotKey in Frameworks */ = {isa = PBXBuildFile; productRef = AE5A8E552DED765C00FB98F4 /* HotKey */; };
 		AEB2AFA32DFF5541001522C1 /* SplitView in Frameworks */ = {isa = PBXBuildFile; productRef = AEB2AFA22DFF5541001522C1 /* SplitView */; };
+		AEB8B5BB2E1C00C2002A8442 /* ZIPFoundation in Frameworks */ = {isa = PBXBuildFile; productRef = AEB8B5BA2E1C00C2002A8442 /* ZIPFoundation */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,20 +32,27 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		AE2CBD642E01B6C300468343 /* suripython */ = {isa = PBXFileReference; lastKnownFileType = folder; name = suripython; path = ../PythonFiles1/suripython; sourceTree = "<group>"; };
-		AE2CBD682E01D17900468343 /* mlx_wrapper.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; name = mlx_wrapper.py; path = ../PythonFiles1/mlx_wrapper.py; sourceTree = "<group>"; };
-		AE2CBD692E01D17900468343 /* MLXEngine.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; name = MLXEngine.py; path = ../PythonFiles1/MLXEngine.py; sourceTree = "<group>"; };
-		AE2CBD6E2E01D1B600468343 /* mlx_app.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; name = mlx_app.py; path = ../PythonFiles1/mlx_app.py; sourceTree = "<group>"; };
-		AE2CBD702E01D32000468343 /* .env */ = {isa = PBXFileReference; lastKnownFileType = text; name = .env; path = ../PythonFiles1/.env; sourceTree = "<group>"; };
-		AE2CBD722E01D38300468343 /* Models */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Models; path = ../Models; sourceTree = "<group>"; };
-		AE5A8E142DED760B00FB98F4 /* SuriAI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuriAI.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		AE5A8E222DED760D00FB98F4 /* SuriAITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SuriAITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		AE5A8E2C2DED760D00FB98F4 /* SuriAIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SuriAIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE5A8E142DED760B00FB98F4 /* Ruma.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ruma.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE5A8E222DED760D00FB98F4 /* RumaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RumaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE5A8E2C2DED760D00FB98F4 /* RumaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RumaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		AEB8B6A12E1D4442002A8442 /* Exceptions for "SuriAI" folder in "Ruma" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				PERSONALITY_UI_FIXES.md,
+			);
+			target = AE5A8E132DED760B00FB98F4 /* Ruma */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		AE5A8E162DED760B00FB98F4 /* SuriAI */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				AEB8B6A12E1D4442002A8442 /* Exceptions for "SuriAI" folder in "Ruma" target */,
+			);
 			path = SuriAI;
 			sourceTree = "<group>";
 		};
@@ -73,6 +76,8 @@
 				AE2CBDB72E033A6300468343 /* MarkdownUI in Frameworks */,
 				AE5A8E562DED765C00FB98F4 /* HotKey in Frameworks */,
 				AEB2AFA32DFF5541001522C1 /* SplitView in Frameworks */,
+				AE2CBE112E044D2F00468343 /* SwiftfulLoadingIndicators in Frameworks */,
+				AEB8B5BB2E1C00C2002A8442 /* ZIPFoundation in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,12 +101,6 @@
 		AE5A8E0B2DED760B00FB98F4 = {
 			isa = PBXGroup;
 			children = (
-				AE2CBD722E01D38300468343 /* Models */,
-				AE2CBD702E01D32000468343 /* .env */,
-				AE2CBD6E2E01D1B600468343 /* mlx_app.py */,
-				AE2CBD682E01D17900468343 /* mlx_wrapper.py */,
-				AE2CBD692E01D17900468343 /* MLXEngine.py */,
-				AE2CBD642E01B6C300468343 /* suripython */,
 				AE5A8E162DED760B00FB98F4 /* SuriAI */,
 				AE5A8E252DED760D00FB98F4 /* SuriAITests */,
 				AE5A8E2F2DED760D00FB98F4 /* SuriAIUITests */,
@@ -112,9 +111,9 @@
 		AE5A8E152DED760B00FB98F4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AE5A8E142DED760B00FB98F4 /* SuriAI.app */,
-				AE5A8E222DED760D00FB98F4 /* SuriAITests.xctest */,
-				AE5A8E2C2DED760D00FB98F4 /* SuriAIUITests.xctest */,
+				AE5A8E142DED760B00FB98F4 /* Ruma.app */,
+				AE5A8E222DED760D00FB98F4 /* RumaTests.xctest */,
+				AE5A8E2C2DED760D00FB98F4 /* RumaUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -122,9 +121,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AE5A8E132DED760B00FB98F4 /* SuriAI */ = {
+		AE5A8E132DED760B00FB98F4 /* Ruma */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AE5A8E362DED760D00FB98F4 /* Build configuration list for PBXNativeTarget "SuriAI" */;
+			buildConfigurationList = AE5A8E362DED760D00FB98F4 /* Build configuration list for PBXNativeTarget "Ruma" */;
 			buildPhases = (
 				AE5A8E102DED760B00FB98F4 /* Sources */,
 				AE5A8E112DED760B00FB98F4 /* Frameworks */,
@@ -137,19 +136,21 @@
 			fileSystemSynchronizedGroups = (
 				AE5A8E162DED760B00FB98F4 /* SuriAI */,
 			);
-			name = SuriAI;
+			name = Ruma;
 			packageProductDependencies = (
 				AE5A8E552DED765C00FB98F4 /* HotKey */,
 				AEB2AFA22DFF5541001522C1 /* SplitView */,
 				AE2CBDB62E033A6300468343 /* MarkdownUI */,
+				AE2CBE102E044D2F00468343 /* SwiftfulLoadingIndicators */,
+				AEB8B5BA2E1C00C2002A8442 /* ZIPFoundation */,
 			);
 			productName = SuriAI;
-			productReference = AE5A8E142DED760B00FB98F4 /* SuriAI.app */;
+			productReference = AE5A8E142DED760B00FB98F4 /* Ruma.app */;
 			productType = "com.apple.product-type.application";
 		};
-		AE5A8E212DED760D00FB98F4 /* SuriAITests */ = {
+		AE5A8E212DED760D00FB98F4 /* RumaTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AE5A8E392DED760D00FB98F4 /* Build configuration list for PBXNativeTarget "SuriAITests" */;
+			buildConfigurationList = AE5A8E392DED760D00FB98F4 /* Build configuration list for PBXNativeTarget "RumaTests" */;
 			buildPhases = (
 				AE5A8E1E2DED760D00FB98F4 /* Sources */,
 				AE5A8E1F2DED760D00FB98F4 /* Frameworks */,
@@ -163,16 +164,16 @@
 			fileSystemSynchronizedGroups = (
 				AE5A8E252DED760D00FB98F4 /* SuriAITests */,
 			);
-			name = SuriAITests;
+			name = RumaTests;
 			packageProductDependencies = (
 			);
 			productName = SuriAITests;
-			productReference = AE5A8E222DED760D00FB98F4 /* SuriAITests.xctest */;
+			productReference = AE5A8E222DED760D00FB98F4 /* RumaTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		AE5A8E2B2DED760D00FB98F4 /* SuriAIUITests */ = {
+		AE5A8E2B2DED760D00FB98F4 /* RumaUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AE5A8E3C2DED760D00FB98F4 /* Build configuration list for PBXNativeTarget "SuriAIUITests" */;
+			buildConfigurationList = AE5A8E3C2DED760D00FB98F4 /* Build configuration list for PBXNativeTarget "RumaUITests" */;
 			buildPhases = (
 				AE5A8E282DED760D00FB98F4 /* Sources */,
 				AE5A8E292DED760D00FB98F4 /* Frameworks */,
@@ -186,11 +187,11 @@
 			fileSystemSynchronizedGroups = (
 				AE5A8E2F2DED760D00FB98F4 /* SuriAIUITests */,
 			);
-			name = SuriAIUITests;
+			name = RumaUITests;
 			packageProductDependencies = (
 			);
 			productName = SuriAIUITests;
-			productReference = AE5A8E2C2DED760D00FB98F4 /* SuriAIUITests.xctest */;
+			productReference = AE5A8E2C2DED760D00FB98F4 /* RumaUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -229,15 +230,17 @@
 				AE5A8E542DED765C00FB98F4 /* XCRemoteSwiftPackageReference "HotKey" */,
 				AEB2AFA12DFF5541001522C1 /* XCRemoteSwiftPackageReference "SplitView" */,
 				AE2CBDB52E033A6300468343 /* XCRemoteSwiftPackageReference "swift-markdown-ui" */,
+				AE2CBE0F2E044D2F00468343 /* XCRemoteSwiftPackageReference "SwiftfulLoadingIndicators" */,
+				AEB8B5B92E1C00C2002A8442 /* XCRemoteSwiftPackageReference "ZIPFoundation" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = AE5A8E152DED760B00FB98F4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AE5A8E132DED760B00FB98F4 /* SuriAI */,
-				AE5A8E212DED760D00FB98F4 /* SuriAITests */,
-				AE5A8E2B2DED760D00FB98F4 /* SuriAIUITests */,
+				AE5A8E132DED760B00FB98F4 /* Ruma */,
+				AE5A8E212DED760D00FB98F4 /* RumaTests */,
+				AE5A8E2B2DED760D00FB98F4 /* RumaUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -247,12 +250,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE2CBD732E01D38300468343 /* Models in Resources */,
-				AE2CBD712E01D32000468343 /* .env in Resources */,
-				AE2CBD6F2E01D1B600468343 /* mlx_app.py in Resources */,
-				AE2CBD6B2E01D17900468343 /* mlx_wrapper.py in Resources */,
-				AE2CBD6C2E01D17900468343 /* MLXEngine.py in Resources */,
-				AE2CBD652E01B6C300468343 /* suripython in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,12 +296,12 @@
 /* Begin PBXTargetDependency section */
 		AE5A8E242DED760D00FB98F4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = AE5A8E132DED760B00FB98F4 /* SuriAI */;
+			target = AE5A8E132DED760B00FB98F4 /* Ruma */;
 			targetProxy = AE5A8E232DED760D00FB98F4 /* PBXContainerItemProxy */;
 		};
 		AE5A8E2E2DED760D00FB98F4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = AE5A8E132DED760B00FB98F4 /* SuriAI */;
+			target = AE5A8E132DED760B00FB98F4 /* Ruma */;
 			targetProxy = AE5A8E2D2DED760D00FB98F4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -445,7 +442,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SuriAI/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = SuriAI;
+				INFOPLIST_KEY_CFBundleDisplayName = Ruma;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
@@ -478,9 +475,9 @@
 					"$(PROJECT_DIR)/surivenv/lib/python3.11/site-packages/watchfiles",
 					"$(PROJECT_DIR)/surivenv/lib/python3.11/site-packages/numpy/_core/lib",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 15.0;
-				MARKETING_VERSION = 0.01;
-				PRODUCT_BUNDLE_IDENTIFIER = name.pradhumn.SuriAI;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 0.2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = name.pradhumn.Ruma;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -503,7 +500,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SuriAI/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = SuriAI;
+				INFOPLIST_KEY_CFBundleDisplayName = Ruma;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
@@ -536,9 +533,9 @@
 					"$(PROJECT_DIR)/surivenv/lib/python3.11/site-packages/watchfiles",
 					"$(PROJECT_DIR)/surivenv/lib/python3.11/site-packages/numpy/_core/lib",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 15.0;
-				MARKETING_VERSION = 0.01;
-				PRODUCT_BUNDLE_IDENTIFIER = name.pradhumn.SuriAI;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 0.2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = name.pradhumn.Ruma;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -589,6 +586,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = name.pradhumn.SuriAIUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -605,6 +603,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = name.pradhumn.SuriAIUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -626,7 +625,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AE5A8E362DED760D00FB98F4 /* Build configuration list for PBXNativeTarget "SuriAI" */ = {
+		AE5A8E362DED760D00FB98F4 /* Build configuration list for PBXNativeTarget "Ruma" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AE5A8E372DED760D00FB98F4 /* Debug */,
@@ -635,7 +634,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AE5A8E392DED760D00FB98F4 /* Build configuration list for PBXNativeTarget "SuriAITests" */ = {
+		AE5A8E392DED760D00FB98F4 /* Build configuration list for PBXNativeTarget "RumaTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AE5A8E3A2DED760D00FB98F4 /* Debug */,
@@ -644,7 +643,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AE5A8E3C2DED760D00FB98F4 /* Build configuration list for PBXNativeTarget "SuriAIUITests" */ = {
+		AE5A8E3C2DED760D00FB98F4 /* Build configuration list for PBXNativeTarget "RumaUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AE5A8E3D2DED760D00FB98F4 /* Debug */,
@@ -664,6 +663,14 @@
 				minimumVersion = 2.4.1;
 			};
 		};
+		AE2CBE0F2E044D2F00468343 /* XCRemoteSwiftPackageReference "SwiftfulLoadingIndicators" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftfulThinking/SwiftfulLoadingIndicators.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.4;
+			};
+		};
 		AE5A8E542DED765C00FB98F4 /* XCRemoteSwiftPackageReference "HotKey" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/soffes/HotKey";
@@ -680,6 +687,14 @@
 				minimumVersion = 3.5.3;
 			};
 		};
+		AEB8B5B92E1C00C2002A8442 /* XCRemoteSwiftPackageReference "ZIPFoundation" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/weichsel/ZIPFoundation.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.19;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -687,6 +702,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = AE2CBDB52E033A6300468343 /* XCRemoteSwiftPackageReference "swift-markdown-ui" */;
 			productName = MarkdownUI;
+		};
+		AE2CBE102E044D2F00468343 /* SwiftfulLoadingIndicators */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AE2CBE0F2E044D2F00468343 /* XCRemoteSwiftPackageReference "SwiftfulLoadingIndicators" */;
+			productName = SwiftfulLoadingIndicators;
 		};
 		AE5A8E552DED765C00FB98F4 /* HotKey */ = {
 			isa = XCSwiftPackageProductDependency;
@@ -697,6 +717,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = AEB2AFA12DFF5541001522C1 /* XCRemoteSwiftPackageReference "SplitView" */;
 			productName = SplitView;
+		};
+		AEB8B5BA2E1C00C2002A8442 /* ZIPFoundation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AEB8B5B92E1C00C2002A8442 /* XCRemoteSwiftPackageReference "ZIPFoundation" */;
+			productName = ZIPFoundation;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

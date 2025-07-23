@@ -3,50 +3,16 @@ import SwiftUI
 import AppKit
 
 
-//class FloatingWindowView {
-//    
-//    static var window: NSWindow?
-//    
-//    
-//    static func showFloatingWindow<Content: View>(view: Content) {
-//        
-//        let window = NSWindow(
-//            contentRect: NSRect(x: 200, y: 200, width: 300, height: 200),
-//            styleMask: [.borderless],
-//            backing: .buffered,
-//            defer: false
-//        )
-//        
-//        window.level = .floating
-//        window.isOpaque = false
-//        window.hasShadow = true
-//        window.backgroundColor = .clear
-//        window.collectionBehavior = [.canJoinAllSpaces, .fullScreenAuxiliary]
-//        window.ignoresMouseEvents = false
-//        window.isMovableByWindowBackground = true
-//        window.isReleasedWhenClosed = false
-//        let hostingView = NSHostingView(rootView: view)
-//        window.contentView = hostingView.view
-//        window.makeKeyAndOrderFront(nil)
-//       
-//        Self.window = window
-//    }
-//    
-//    static func close() {
-//        Self.window?.close()
-//        Self.window = nil
-//    }
-//    
-//}
 
 class ContentPanel: NSPanel {
     
     private let focusModel = FocusModel()
+    private let windowSizeUpdater = WindowSizeUpdater()
     
     init(){
         super.init(
             contentRect: .zero,
-            styleMask: [.borderless, .nonactivatingPanel, .titled,.resizable],
+            styleMask: [.borderless, .nonactivatingPanel,.titled,.resizable],
             backing: .buffered,
             defer: true
         )
@@ -71,20 +37,20 @@ class ContentPanel: NSPanel {
             .canJoinAllSpaces,
             .stationary
         ]
-     
+        
+        // Register window with DynamicIslandPlacementManager
+        Task { @MainActor in
+            DynamicIslandPlacementManager.shared.registerWindow(self)
+        }
     }
     
     private func setupContentView(){
-        let updater = WindowSizeUpdater()
-        updater.panel = self
-        
-        
-        
+        windowSizeUpdater.panel = self
         
         let contentView = ContentView() {
             self.close()
         }
-            .environmentObject(updater) // inject into SwiftUI
+            .environmentObject(windowSizeUpdater) // inject into SwiftUI
             .environmentObject(focusModel)
 //        let contentView = ContentView()
 //            .environmentObject(updater) // inject into SwiftUI
@@ -134,6 +100,13 @@ class WindowSizeUpdater: ObservableObject {
         let heightDiff = newSize.height - frame.size.height
         frame.origin.y -= heightDiff  // so it expands from top
         frame.size = newSize
+        panel.setFrame(frame, display: true, animate: true)
+    }
+    
+    func updateWidth(to newWidth: CGFloat) {
+        guard let panel = panel else { return }
+        var frame = panel.frame
+        frame.size.width = newWidth
         panel.setFrame(frame, display: true, animate: true)
     }
 }

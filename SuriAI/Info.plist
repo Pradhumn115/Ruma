@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-<dict/>
+<dict>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
+	<key>NSScreenCaptureUsageDescription</key>
+	<string>SuriAI needs screen capture access to analyze and understand the content on your screen for intelligent AI assistance.</string>
+	<key>NSSystemAdministrationUsageDescription</key>
+	<string>SuriAI needs system administration access to capture window information for screen analysis.</string>
+	<key>NSAppleEventsUsageDescription</key>
+	<string>SuriAI needs Apple Events access to identify active windows and applications for enhanced screen understanding.</string>
+</dict>
 </plist>

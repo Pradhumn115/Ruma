@@ -1,0 +1,815 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AE2CBDB72E033A6300468343 /* MarkdownUI in Frameworks */ = {isa = PBXBuildFile; productRef = AE2CBDB62E033A6300468343 /* MarkdownUI */; };
+		AE2CBE112E044D2F00468343 /* SwiftfulLoadingIndicators in Frameworks */ = {isa = PBXBuildFile; productRef = AE2CBE102E044D2F00468343 /* SwiftfulLoadingIndicators */; };
+		AE2CBE3C2E0F0BA900468343 /* server_config.py in Resources */ = {isa = PBXBuildFile; fileRef = AE2CBE212E0F0BA200468343 /* server_config.py */; };
+		AE2CBE3D2E0F0BA900468343 /* api_key_requirements.txt in Resources */ = {isa = PBXBuildFile; fileRef = AE2CBE222E0F0BA200468343 /* api_key_requirements.txt */; };
+		AE2CBE3E2E0F0BA900468343 /* model_manager.py in Resources */ = {isa = PBXBuildFile; fileRef = AE2CBE232E0F0BA200468343 /* model_manager.py */; };
+		AE2CBE3F2E0F0BA900468343 /* auto_updater.py in Resources */ = {isa = PBXBuildFile; fileRef = AE2CBE242E0F0BA200468343 /* auto_updater.py */; };
+		AE2CBE402E0F0BA900468343 /* mlx_app.py in Resources */ = {isa = PBXBuildFile; fileRef = AE2CBE252E0F0BA200468343 /* mlx_app.py */; };
+		AE2CBE412E0F0BA900468343 /* unified_app.py in Resources */ = {isa = PBXBuildFile; fileRef = AE2CBE262E0F0BA200468343 /* unified_app.py */; };
+		AE2CBE422E0F0BA900468343 /* performance_monitor.py in Resources */ = {isa = PBXBuildFile; fileRef = AE2CBE272E0F0BA200468343 /* performance_monitor.py */; };
+		AE2CBE432E0F0BA900468343 /* LlamaCppEngine.py in Resources */ = {isa = PBXBuildFile; fileRef = AE2CBE282E0F0BA200468343 /* LlamaCppEngine.py */; };
+		AE2CBE442E0F0BA900468343 /* llamacpp_wrapper.py in Resources */ = {isa = PBXBuildFile; fileRef = AE2CBE292E0F0BA200468343 /* llamacpp_wrapper.py */; };
+		AE2CBE452E0F0BA900468343 /* ruma-python in Resources */ = {isa = PBXBuildFile; fileRef = AE2CBE2A2E0F0BA600468343 /* ruma-python */; };
+		AE2CBE462E0F0BA900468343 /* screen_capture.py in Resources */ = {isa = PBXBuildFile; fileRef = AE2CBE2B2E0F0BA600468343 /* screen_capture.py */; };
+		AE2CBE472E0F0BA900468343 /* simple_chat_manager.py in Resources */ = {isa = PBXBuildFile; fileRef = AE2CBE2C2E0F0BA600468343 /* simple_chat_manager.py */; };
+		AE2CBE482E0F0BA900468343 /* api_model_wrapper.py in Resources */ = {isa = PBXBuildFile; fileRef = AE2CBE2D2E0F0BA600468343 /* api_model_wrapper.py */; };
+		AE2CBE492E0F0BA900468343 /* search_requirements.txt in Resources */ = {isa = PBXBuildFile; fileRef = AE2CBE2E2E0F0BA600468343 /* search_requirements.txt */; };
+		AE2CBE4A2E0F0BA900468343 /* mlx_wrapper.py in Resources */ = {isa = PBXBuildFile; fileRef = AE2CBE2F2E0F0BA700468343 /* mlx_wrapper.py */; };
+		AE2CBE4B2E0F0BA900468343 /* MLXEngine.py in Resources */ = {isa = PBXBuildFile; fileRef = AE2CBE302E0F0BA700468343 /* MLXEngine.py */; };
+		AE2CBE4C2E0F0BA900468343 /* api_keys.json in Resources */ = {isa = PBXBuildFile; fileRef = AE2CBE312E0F0BA700468343 /* api_keys.json */; };
+		AE2CBE4D2E0F0BA900468343 /* github_updater.py in Resources */ = {isa = PBXBuildFile; fileRef = AE2CBE322E0F0BA700468343 /* github_updater.py */; };
+		AE2CBE4E2E0F0BA900468343 /* download_state.json in Resources */ = {isa = PBXBuildFile; fileRef = AE2CBE332E0F0BA800468343 /* download_state.json */; };
+		AE2CBE4F2E0F0BA900468343 /* downloadManager.py in Resources */ = {isa = PBXBuildFile; fileRef = AE2CBE342E0F0BA800468343 /* downloadManager.py */; };
+		AE2CBE502E0F0BA900468343 /* default_model_installer.py in Resources */ = {isa = PBXBuildFile; fileRef = AE2CBE352E0F0BA800468343 /* default_model_installer.py */; };
+		AE2CBE512E0F0BA900468343 /* server_config.json in Resources */ = {isa = PBXBuildFile; fileRef = AE2CBE362E0F0BA800468343 /* server_config.json */; };
+		AE2CBE522E0F0BA900468343 /* model_size_calc.py in Resources */ = {isa = PBXBuildFile; fileRef = AE2CBE372E0F0BA800468343 /* model_size_calc.py */; };
+		AE2CBE532E0F0BA900468343 /* model_hub.py in Resources */ = {isa = PBXBuildFile; fileRef = AE2CBE382E0F0BA900468343 /* model_hub.py */; };
+		AE2CBE542E0F0BA900468343 /* api_key_manager.py in Resources */ = {isa = PBXBuildFile; fileRef = AE2CBE392E0F0BA900468343 /* api_key_manager.py */; };
+		AE2CBE552E0F0BA900468343 /* version.json in Resources */ = {isa = PBXBuildFile; fileRef = AE2CBE3A2E0F0BA900468343 /* version.json */; };
+		AE2CBE562E0F0BA900468343 /* chat_manager.py in Resources */ = {isa = PBXBuildFile; fileRef = AE2CBE3B2E0F0BA900468343 /* chat_manager.py */; };
+		AE2CBE582E0F0BD300468343 /* .env in Resources */ = {isa = PBXBuildFile; fileRef = AE2CBE572E0F0BD300468343 /* .env */; };
+		AE2CBE5A2E0F0CA900468343 /* .encryption_key in Resources */ = {isa = PBXBuildFile; fileRef = AE2CBE592E0F0CA900468343 /* .encryption_key */; };
+		AE5A8E562DED765C00FB98F4 /* HotKey in Frameworks */ = {isa = PBXBuildFile; productRef = AE5A8E552DED765C00FB98F4 /* HotKey */; };
+		AEB2AFA32DFF5541001522C1 /* SplitView in Frameworks */ = {isa = PBXBuildFile; productRef = AEB2AFA22DFF5541001522C1 /* SplitView */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AE5A8E232DED760D00FB98F4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE5A8E0C2DED760B00FB98F4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE5A8E132DED760B00FB98F4;
+			remoteInfo = SuriAI;
+		};
+		AE5A8E2D2DED760D00FB98F4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE5A8E0C2DED760B00FB98F4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE5A8E132DED760B00FB98F4;
+			remoteInfo = SuriAI;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AE2CBE212E0F0BA200468343 /* server_config.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = server_config.py; sourceTree = "<group>"; };
+		AE2CBE222E0F0BA200468343 /* api_key_requirements.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = api_key_requirements.txt; sourceTree = "<group>"; };
+		AE2CBE232E0F0BA200468343 /* model_manager.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = model_manager.py; sourceTree = "<group>"; };
+		AE2CBE242E0F0BA200468343 /* auto_updater.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = auto_updater.py; sourceTree = "<group>"; };
+		AE2CBE252E0F0BA200468343 /* mlx_app.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = mlx_app.py; sourceTree = "<group>"; };
+		AE2CBE262E0F0BA200468343 /* unified_app.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = unified_app.py; sourceTree = "<group>"; };
+		AE2CBE272E0F0BA200468343 /* performance_monitor.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = performance_monitor.py; sourceTree = "<group>"; };
+		AE2CBE282E0F0BA200468343 /* LlamaCppEngine.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = LlamaCppEngine.py; sourceTree = "<group>"; };
+		AE2CBE292E0F0BA200468343 /* llamacpp_wrapper.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = llamacpp_wrapper.py; sourceTree = "<group>"; };
+		AE2CBE2A2E0F0BA600468343 /* ruma-python */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "ruma-python"; sourceTree = "<group>"; };
+		AE2CBE2B2E0F0BA600468343 /* screen_capture.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = screen_capture.py; sourceTree = "<group>"; };
+		AE2CBE2C2E0F0BA600468343 /* simple_chat_manager.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = simple_chat_manager.py; sourceTree = "<group>"; };
+		AE2CBE2D2E0F0BA600468343 /* api_model_wrapper.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = api_model_wrapper.py; sourceTree = "<group>"; };
+		AE2CBE2E2E0F0BA600468343 /* search_requirements.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = search_requirements.txt; sourceTree = "<group>"; };
+		AE2CBE2F2E0F0BA700468343 /* mlx_wrapper.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = mlx_wrapper.py; sourceTree = "<group>"; };
+		AE2CBE302E0F0BA700468343 /* MLXEngine.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = MLXEngine.py; sourceTree = "<group>"; };
+		AE2CBE312E0F0BA700468343 /* api_keys.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = api_keys.json; sourceTree = "<group>"; };
+		AE2CBE322E0F0BA700468343 /* github_updater.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = github_updater.py; sourceTree = "<group>"; };
+		AE2CBE332E0F0BA800468343 /* download_state.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = download_state.json; sourceTree = "<group>"; };
+		AE2CBE342E0F0BA800468343 /* downloadManager.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = downloadManager.py; sourceTree = "<group>"; };
+		AE2CBE352E0F0BA800468343 /* default_model_installer.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = default_model_installer.py; sourceTree = "<group>"; };
+		AE2CBE362E0F0BA800468343 /* server_config.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = server_config.json; sourceTree = "<group>"; };
+		AE2CBE372E0F0BA800468343 /* model_size_calc.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = model_size_calc.py; sourceTree = "<group>"; };
+		AE2CBE382E0F0BA900468343 /* model_hub.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = model_hub.py; sourceTree = "<group>"; };
+		AE2CBE392E0F0BA900468343 /* api_key_manager.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = api_key_manager.py; sourceTree = "<group>"; };
+		AE2CBE3A2E0F0BA900468343 /* version.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = version.json; sourceTree = "<group>"; };
+		AE2CBE3B2E0F0BA900468343 /* chat_manager.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = chat_manager.py; sourceTree = "<group>"; };
+		AE2CBE572E0F0BD300468343 /* .env */ = {isa = PBXFileReference; lastKnownFileType = text; path = .env; sourceTree = "<group>"; };
+		AE2CBE592E0F0CA900468343 /* .encryption_key */ = {isa = PBXFileReference; lastKnownFileType = text; path = .encryption_key; sourceTree = "<group>"; };
+		AE5A8E142DED760B00FB98F4 /* Ruma.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ruma.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE5A8E222DED760D00FB98F4 /* RumaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RumaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE5A8E2C2DED760D00FB98F4 /* RumaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RumaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		AE5A8E162DED760B00FB98F4 /* SuriAI */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = SuriAI;
+			sourceTree = "<group>";
+		};
+		AE5A8E252DED760D00FB98F4 /* SuriAITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = SuriAITests;
+			sourceTree = "<group>";
+		};
+		AE5A8E2F2DED760D00FB98F4 /* SuriAIUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = SuriAIUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AE5A8E112DED760B00FB98F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE2CBDB72E033A6300468343 /* MarkdownUI in Frameworks */,
+				AE5A8E562DED765C00FB98F4 /* HotKey in Frameworks */,
+				AEB2AFA32DFF5541001522C1 /* SplitView in Frameworks */,
+				AE2CBE112E044D2F00468343 /* SwiftfulLoadingIndicators in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE5A8E1F2DED760D00FB98F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE5A8E292DED760D00FB98F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AE5A8E0B2DED760B00FB98F4 = {
+			isa = PBXGroup;
+			children = (
+				AE2CBE592E0F0CA900468343 /* .encryption_key */,
+				AE2CBE572E0F0BD300468343 /* .env */,
+				AE2CBE392E0F0BA900468343 /* api_key_manager.py */,
+				AE2CBE222E0F0BA200468343 /* api_key_requirements.txt */,
+				AE2CBE312E0F0BA700468343 /* api_keys.json */,
+				AE2CBE2D2E0F0BA600468343 /* api_model_wrapper.py */,
+				AE2CBE242E0F0BA200468343 /* auto_updater.py */,
+				AE2CBE3B2E0F0BA900468343 /* chat_manager.py */,
+				AE2CBE352E0F0BA800468343 /* default_model_installer.py */,
+				AE2CBE332E0F0BA800468343 /* download_state.json */,
+				AE2CBE342E0F0BA800468343 /* downloadManager.py */,
+				AE2CBE322E0F0BA700468343 /* github_updater.py */,
+				AE2CBE292E0F0BA200468343 /* llamacpp_wrapper.py */,
+				AE2CBE282E0F0BA200468343 /* LlamaCppEngine.py */,
+				AE2CBE252E0F0BA200468343 /* mlx_app.py */,
+				AE2CBE2F2E0F0BA700468343 /* mlx_wrapper.py */,
+				AE2CBE302E0F0BA700468343 /* MLXEngine.py */,
+				AE2CBE382E0F0BA900468343 /* model_hub.py */,
+				AE2CBE232E0F0BA200468343 /* model_manager.py */,
+				AE2CBE372E0F0BA800468343 /* model_size_calc.py */,
+				AE2CBE272E0F0BA200468343 /* performance_monitor.py */,
+				AE2CBE2A2E0F0BA600468343 /* ruma-python */,
+				AE2CBE2B2E0F0BA600468343 /* screen_capture.py */,
+				AE2CBE2E2E0F0BA600468343 /* search_requirements.txt */,
+				AE2CBE362E0F0BA800468343 /* server_config.json */,
+				AE2CBE212E0F0BA200468343 /* server_config.py */,
+				AE2CBE2C2E0F0BA600468343 /* simple_chat_manager.py */,
+				AE2CBE262E0F0BA200468343 /* unified_app.py */,
+				AE2CBE3A2E0F0BA900468343 /* version.json */,
+				AE5A8E162DED760B00FB98F4 /* SuriAI */,
+				AE5A8E252DED760D00FB98F4 /* SuriAITests */,
+				AE5A8E2F2DED760D00FB98F4 /* SuriAIUITests */,
+				AE5A8E152DED760B00FB98F4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AE5A8E152DED760B00FB98F4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AE5A8E142DED760B00FB98F4 /* Ruma.app */,
+				AE5A8E222DED760D00FB98F4 /* RumaTests.xctest */,
+				AE5A8E2C2DED760D00FB98F4 /* RumaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AE5A8E132DED760B00FB98F4 /* Ruma */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE5A8E362DED760D00FB98F4 /* Build configuration list for PBXNativeTarget "Ruma" */;
+			buildPhases = (
+				AE5A8E102DED760B00FB98F4 /* Sources */,
+				AE5A8E112DED760B00FB98F4 /* Frameworks */,
+				AE5A8E122DED760B00FB98F4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				AE5A8E162DED760B00FB98F4 /* SuriAI */,
+			);
+			name = Ruma;
+			packageProductDependencies = (
+				AE5A8E552DED765C00FB98F4 /* HotKey */,
+				AEB2AFA22DFF5541001522C1 /* SplitView */,
+				AE2CBDB62E033A6300468343 /* MarkdownUI */,
+				AE2CBE102E044D2F00468343 /* SwiftfulLoadingIndicators */,
+			);
+			productName = SuriAI;
+			productReference = AE5A8E142DED760B00FB98F4 /* Ruma.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AE5A8E212DED760D00FB98F4 /* RumaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE5A8E392DED760D00FB98F4 /* Build configuration list for PBXNativeTarget "RumaTests" */;
+			buildPhases = (
+				AE5A8E1E2DED760D00FB98F4 /* Sources */,
+				AE5A8E1F2DED760D00FB98F4 /* Frameworks */,
+				AE5A8E202DED760D00FB98F4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AE5A8E242DED760D00FB98F4 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				AE5A8E252DED760D00FB98F4 /* SuriAITests */,
+			);
+			name = RumaTests;
+			packageProductDependencies = (
+			);
+			productName = SuriAITests;
+			productReference = AE5A8E222DED760D00FB98F4 /* RumaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AE5A8E2B2DED760D00FB98F4 /* RumaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE5A8E3C2DED760D00FB98F4 /* Build configuration list for PBXNativeTarget "RumaUITests" */;
+			buildPhases = (
+				AE5A8E282DED760D00FB98F4 /* Sources */,
+				AE5A8E292DED760D00FB98F4 /* Frameworks */,
+				AE5A8E2A2DED760D00FB98F4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AE5A8E2E2DED760D00FB98F4 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				AE5A8E2F2DED760D00FB98F4 /* SuriAIUITests */,
+			);
+			name = RumaUITests;
+			packageProductDependencies = (
+			);
+			productName = SuriAIUITests;
+			productReference = AE5A8E2C2DED760D00FB98F4 /* RumaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AE5A8E0C2DED760B00FB98F4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1630;
+				LastUpgradeCheck = 1640;
+				TargetAttributes = {
+					AE5A8E132DED760B00FB98F4 = {
+						CreatedOnToolsVersion = 16.3;
+					};
+					AE5A8E212DED760D00FB98F4 = {
+						CreatedOnToolsVersion = 16.3;
+						TestTargetID = AE5A8E132DED760B00FB98F4;
+					};
+					AE5A8E2B2DED760D00FB98F4 = {
+						CreatedOnToolsVersion = 16.3;
+						TestTargetID = AE5A8E132DED760B00FB98F4;
+					};
+				};
+			};
+			buildConfigurationList = AE5A8E0F2DED760B00FB98F4 /* Build configuration list for PBXProject "SuriAI" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AE5A8E0B2DED760B00FB98F4;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				AE5A8E542DED765C00FB98F4 /* XCRemoteSwiftPackageReference "HotKey" */,
+				AEB2AFA12DFF5541001522C1 /* XCRemoteSwiftPackageReference "SplitView" */,
+				AE2CBDB52E033A6300468343 /* XCRemoteSwiftPackageReference "swift-markdown-ui" */,
+				AE2CBE0F2E044D2F00468343 /* XCRemoteSwiftPackageReference "SwiftfulLoadingIndicators" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = AE5A8E152DED760B00FB98F4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AE5A8E132DED760B00FB98F4 /* Ruma */,
+				AE5A8E212DED760D00FB98F4 /* RumaTests */,
+				AE5A8E2B2DED760D00FB98F4 /* RumaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AE5A8E122DED760B00FB98F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE2CBE5A2E0F0CA900468343 /* .encryption_key in Resources */,
+				AE2CBE582E0F0BD300468343 /* .env in Resources */,
+				AE2CBE3C2E0F0BA900468343 /* server_config.py in Resources */,
+				AE2CBE3D2E0F0BA900468343 /* api_key_requirements.txt in Resources */,
+				AE2CBE3E2E0F0BA900468343 /* model_manager.py in Resources */,
+				AE2CBE3F2E0F0BA900468343 /* auto_updater.py in Resources */,
+				AE2CBE402E0F0BA900468343 /* mlx_app.py in Resources */,
+				AE2CBE412E0F0BA900468343 /* unified_app.py in Resources */,
+				AE2CBE422E0F0BA900468343 /* performance_monitor.py in Resources */,
+				AE2CBE432E0F0BA900468343 /* LlamaCppEngine.py in Resources */,
+				AE2CBE442E0F0BA900468343 /* llamacpp_wrapper.py in Resources */,
+				AE2CBE452E0F0BA900468343 /* ruma-python in Resources */,
+				AE2CBE462E0F0BA900468343 /* screen_capture.py in Resources */,
+				AE2CBE472E0F0BA900468343 /* simple_chat_manager.py in Resources */,
+				AE2CBE482E0F0BA900468343 /* api_model_wrapper.py in Resources */,
+				AE2CBE492E0F0BA900468343 /* search_requirements.txt in Resources */,
+				AE2CBE4A2E0F0BA900468343 /* mlx_wrapper.py in Resources */,
+				AE2CBE4B2E0F0BA900468343 /* MLXEngine.py in Resources */,
+				AE2CBE4C2E0F0BA900468343 /* api_keys.json in Resources */,
+				AE2CBE4D2E0F0BA900468343 /* github_updater.py in Resources */,
+				AE2CBE4E2E0F0BA900468343 /* download_state.json in Resources */,
+				AE2CBE4F2E0F0BA900468343 /* downloadManager.py in Resources */,
+				AE2CBE502E0F0BA900468343 /* default_model_installer.py in Resources */,
+				AE2CBE512E0F0BA900468343 /* server_config.json in Resources */,
+				AE2CBE522E0F0BA900468343 /* model_size_calc.py in Resources */,
+				AE2CBE532E0F0BA900468343 /* model_hub.py in Resources */,
+				AE2CBE542E0F0BA900468343 /* api_key_manager.py in Resources */,
+				AE2CBE552E0F0BA900468343 /* version.json in Resources */,
+				AE2CBE562E0F0BA900468343 /* chat_manager.py in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE5A8E202DED760D00FB98F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE5A8E2A2DED760D00FB98F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AE5A8E102DED760B00FB98F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE5A8E1E2DED760D00FB98F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE5A8E282DED760D00FB98F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AE5A8E242DED760D00FB98F4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AE5A8E132DED760B00FB98F4 /* Ruma */;
+			targetProxy = AE5A8E232DED760D00FB98F4 /* PBXContainerItemProxy */;
+		};
+		AE5A8E2E2DED760D00FB98F4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AE5A8E132DED760B00FB98F4 /* Ruma */;
+			targetProxy = AE5A8E2D2DED760D00FB98F4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		AE5A8E342DED760D00FB98F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AE5A8E352DED760D00FB98F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		AE5A8E372DED760D00FB98F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SuriAI/SuriAI.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = KS252J4F4N;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SuriAI/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Ruma;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SuriAI/surivenv/lib/python3.11/site-packages/google/_upb",
+					"$(PROJECT_DIR)/SuriAI/surivenv/lib/python3.11/site-packages/mlx/lib",
+					"$(PROJECT_DIR)/SuriAI/surivenv/lib/python3.11/site-packages/pydantic_core",
+					"$(PROJECT_DIR)/SuriAI/surivenv/lib/python3.11/site-packages/numpy/_core/lib",
+					"$(PROJECT_DIR)/SuriAI/surivenv/lib/python3.11/site-packages/tokenizers",
+					"$(PROJECT_DIR)/SuriAI/surivenv/lib/python3.11/site-packages/safetensors",
+					"$(PROJECT_DIR)/SuriAI/surivenv/lib/python3.11/site-packages/numpy/random/lib",
+					"$(PROJECT_DIR)/SuriAI/surivenv/lib/python3.11/site-packages/ormsgpack",
+					"$(PROJECT_DIR)/SuriAI/surivenv/lib/python3.11/site-packages/orjson",
+					"$(PROJECT_DIR)/SuriAI/surivenv/lib/python3.11/site-packages/watchfiles",
+					"$(PROJECT_DIR)/SuriAI/surivenv/lib/python3.11/site-packages/hf_xet",
+					"$(PROJECT_DIR)/surivenv/lib/python3.11/site-packages/ormsgpack",
+					"$(PROJECT_DIR)/surivenv/lib/python3.11/site-packages/hf_xet",
+					"$(PROJECT_DIR)/surivenv/lib/python3.11/site-packages/orjson",
+					"$(PROJECT_DIR)/surivenv/lib/python3.11/site-packages/tokenizers",
+					"$(PROJECT_DIR)/surivenv/lib/python3.11/site-packages/safetensors",
+					"$(PROJECT_DIR)/surivenv/lib/python3.11/site-packages/numpy/random/lib",
+					"$(PROJECT_DIR)/surivenv/lib/python3.11/site-packages/mlx/lib",
+					"$(PROJECT_DIR)/surivenv/lib/python3.11/site-packages/pydantic_core",
+					"$(PROJECT_DIR)/surivenv/lib/python3.11/site-packages/google/_upb",
+					"$(PROJECT_DIR)/surivenv/lib/python3.11/site-packages/watchfiles",
+					"$(PROJECT_DIR)/surivenv/lib/python3.11/site-packages/numpy/_core/lib",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 0.0.2;
+				PRODUCT_BUNDLE_IDENTIFIER = name.pradhumn.Ruma;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		AE5A8E382DED760D00FB98F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SuriAI/SuriAI.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = KS252J4F4N;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SuriAI/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Ruma;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SuriAI/surivenv/lib/python3.11/site-packages/google/_upb",
+					"$(PROJECT_DIR)/SuriAI/surivenv/lib/python3.11/site-packages/mlx/lib",
+					"$(PROJECT_DIR)/SuriAI/surivenv/lib/python3.11/site-packages/pydantic_core",
+					"$(PROJECT_DIR)/SuriAI/surivenv/lib/python3.11/site-packages/numpy/_core/lib",
+					"$(PROJECT_DIR)/SuriAI/surivenv/lib/python3.11/site-packages/tokenizers",
+					"$(PROJECT_DIR)/SuriAI/surivenv/lib/python3.11/site-packages/safetensors",
+					"$(PROJECT_DIR)/SuriAI/surivenv/lib/python3.11/site-packages/numpy/random/lib",
+					"$(PROJECT_DIR)/SuriAI/surivenv/lib/python3.11/site-packages/ormsgpack",
+					"$(PROJECT_DIR)/SuriAI/surivenv/lib/python3.11/site-packages/orjson",
+					"$(PROJECT_DIR)/SuriAI/surivenv/lib/python3.11/site-packages/watchfiles",
+					"$(PROJECT_DIR)/SuriAI/surivenv/lib/python3.11/site-packages/hf_xet",
+					"$(PROJECT_DIR)/surivenv/lib/python3.11/site-packages/ormsgpack",
+					"$(PROJECT_DIR)/surivenv/lib/python3.11/site-packages/hf_xet",
+					"$(PROJECT_DIR)/surivenv/lib/python3.11/site-packages/orjson",
+					"$(PROJECT_DIR)/surivenv/lib/python3.11/site-packages/tokenizers",
+					"$(PROJECT_DIR)/surivenv/lib/python3.11/site-packages/safetensors",
+					"$(PROJECT_DIR)/surivenv/lib/python3.11/site-packages/numpy/random/lib",
+					"$(PROJECT_DIR)/surivenv/lib/python3.11/site-packages/mlx/lib",
+					"$(PROJECT_DIR)/surivenv/lib/python3.11/site-packages/pydantic_core",
+					"$(PROJECT_DIR)/surivenv/lib/python3.11/site-packages/google/_upb",
+					"$(PROJECT_DIR)/surivenv/lib/python3.11/site-packages/watchfiles",
+					"$(PROJECT_DIR)/surivenv/lib/python3.11/site-packages/numpy/_core/lib",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 0.0.2;
+				PRODUCT_BUNDLE_IDENTIFIER = name.pradhumn.Ruma;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		AE5A8E3A2DED760D00FB98F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = name.pradhumn.SuriAITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SuriAI.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SuriAI";
+			};
+			name = Debug;
+		};
+		AE5A8E3B2DED760D00FB98F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = name.pradhumn.SuriAITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SuriAI.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SuriAI";
+			};
+			name = Release;
+		};
+		AE5A8E3D2DED760D00FB98F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = name.pradhumn.SuriAIUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = SuriAI;
+			};
+			name = Debug;
+		};
+		AE5A8E3E2DED760D00FB98F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = name.pradhumn.SuriAIUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = SuriAI;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AE5A8E0F2DED760B00FB98F4 /* Build configuration list for PBXProject "SuriAI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE5A8E342DED760D00FB98F4 /* Debug */,
+				AE5A8E352DED760D00FB98F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE5A8E362DED760D00FB98F4 /* Build configuration list for PBXNativeTarget "Ruma" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE5A8E372DED760D00FB98F4 /* Debug */,
+				AE5A8E382DED760D00FB98F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE5A8E392DED760D00FB98F4 /* Build configuration list for PBXNativeTarget "RumaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE5A8E3A2DED760D00FB98F4 /* Debug */,
+				AE5A8E3B2DED760D00FB98F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE5A8E3C2DED760D00FB98F4 /* Build configuration list for PBXNativeTarget "RumaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE5A8E3D2DED760D00FB98F4 /* Debug */,
+				AE5A8E3E2DED760D00FB98F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AE2CBDB52E033A6300468343 /* XCRemoteSwiftPackageReference "swift-markdown-ui" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/gonzalezreal/swift-markdown-ui";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.4.1;
+			};
+		};
+		AE2CBE0F2E044D2F00468343 /* XCRemoteSwiftPackageReference "SwiftfulLoadingIndicators" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftfulThinking/SwiftfulLoadingIndicators.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.4;
+			};
+		};
+		AE5A8E542DED765C00FB98F4 /* XCRemoteSwiftPackageReference "HotKey" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/soffes/HotKey";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		AEB2AFA12DFF5541001522C1 /* XCRemoteSwiftPackageReference "SplitView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/stevengharris/SplitView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.5.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AE2CBDB62E033A6300468343 /* MarkdownUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AE2CBDB52E033A6300468343 /* XCRemoteSwiftPackageReference "swift-markdown-ui" */;
+			productName = MarkdownUI;
+		};
+		AE2CBE102E044D2F00468343 /* SwiftfulLoadingIndicators */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AE2CBE0F2E044D2F00468343 /* XCRemoteSwiftPackageReference "SwiftfulLoadingIndicators" */;
+			productName = SwiftfulLoadingIndicators;
+		};
+		AE5A8E552DED765C00FB98F4 /* HotKey */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AE5A8E542DED765C00FB98F4 /* XCRemoteSwiftPackageReference "HotKey" */;
+			productName = HotKey;
+		};
+		AEB2AFA22DFF5541001522C1 /* SplitView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AEB2AFA12DFF5541001522C1 /* XCRemoteSwiftPackageReference "SplitView" */;
+			productName = SplitView;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = AE5A8E0C2DED760B00FB98F4 /* Project object */;
+}
