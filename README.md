@@ -1,7 +1,7 @@
 ![Your Project Logo](https://www.rumaai.app/social-preview.png)
 
 > [!NOTE]  
-> This project is on hold due to other personal commitments. I hope to return when time allows. If anyone is interested in contributing or maintaining, feel free to fork or reach out. In issues or dicord community
+> This project is on hold due to other personal commitments. I hope to return when time allows. If anyone is interested in contributing or maintaining, feel free to fork or reach out. In issues or discord community
 
 
 # 🧠 Ruma – Your Personal AI Assistant for macOS
