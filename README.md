@@ -114,7 +114,7 @@ We welcome:
 
 ## 🌐 Community
 
-- [💬 Discord](https://discord.gg/rNXYjmWU)
+- [💬 Discord](https://discord.gg/rsQmueEcQe)
 
 ---
 
